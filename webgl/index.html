@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js webgl - shaders - sky sun shader</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+
+			body {
+				color: #000;
+				font-family:Monospace;
+				font-size:13px;
+				text-align:center;
+				font-weight: bold;
+
+				background-color: #fff;
+				margin: 0px;
+				overflow: hidden;
+			}
+
+			#info {
+				color:#ccc;
+				text-shadow: 1px 1px rgba(0,0,0,0.25);
+				position: absolute;
+				top: 0px; width: 100%;
+				padding: 5px;
+
+			}
+
+			a { color: #fff; }
+			a {
+				text-decoration: underline;
+				cursor: pointer;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<div id="info">
+		<a href="http://threejs.org" target="_blank" rel="noopener">three.js</a> 
+		webgl - sky + sun shader
+       <br/>
+	   <a href="https://plus.google.com/117614030945250277079/posts/MYkgKdvLhNj">More info</a>
+	    by 
+		<a href="http://twitter.com/blurspline">@blurspline</a>
+		<br/>
+		
+		Verlet integration with relaxed constraints
+		<br/>
+		<a onclick="wind = !wind;">Wind</a> |
+		<a onclick="sphere.visible = !sphere.visible;">Ball</a> |
+		<a onclick="togglePins();">Pins</a>
+						
+		</div>
+
+		<script src="js/build/three.js"></script>
+
+		<script src="js/controls/OrbitControls.js"></script>
+		<script src="js/objects/Sky.js"></script>
+		<script src="js/WebGL.js"></script>
+		<script src="js/libs/dat.gui.min.js"></script>
+		<script src="js/libs/stats.min.js"></script>
+		
+		<script src="js/loaders/DRACOLoader.js"></script>
+		<script src="js/loaders/GLTFLoader.js"></script>
+
+		<script src="js/Cloth.js"></script>
+		
+		<script src="index.js"></script>
+		
+		
+	</body>
+
+</html>
