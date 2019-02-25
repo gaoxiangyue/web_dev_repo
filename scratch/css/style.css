@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+	-webkit-transform-style: preserve-3d;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	transform-style: preserve-3d;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Trebuchet MS;
+  background: #191919;
+  user-select: none;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.module {
+    margin: 0px;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    border: 1px solid black;
+    -ms-transform: scale(1,1); /* IE 9 */
+    -webkit-transform: scale(1,1); /* Safari */
+    transform: scale(1,1); /* 标准语法 */
+}
+
+button {
+  margin: 10px 5px;
+  padding: 5px 10px;
+  border: solid 1px #999;
+  border-radius: 5px;
+  font: 18px Trebuchet MS;
+  color: #999;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+button:hover {
+  border-color: #aaa;
+  color: #aaa;
+}
+button:active, button.selected {
+  color: #eee;
+}
